@@ -35,7 +35,8 @@
 
     .nav-menu-header {
       flex: 1;
-      @media (max-width: 991px) {
+
+      @media (max-width: 1200px) {
         display: none;
       }
 
@@ -64,13 +65,16 @@
             text-decoration: none;
             font-size: rem(16);
             font-weight: 400;
-            // padding: 4px 12px;
             padding: 24px 0px;
-
             display: flex;
             align-items: center;
-
             font-family: var(--font-verdana);
+            transition: 0.3s;
+
+            &:hover {
+              color: #008f85;
+              transition: 0.3s;
+            }
 
             &::after {
               content: "\e900";
@@ -79,15 +83,8 @@
               line-height: normal;
               margin-left: 4px;
               transition: 0.3s;
-
               display: none;
             }
-
-            // &.active {
-            //   &::after {
-            //     transform: rotate(180deg);
-            //   }
-            // }
           }
 
           .dropdown-menu {
@@ -98,24 +95,27 @@
             max-width: 210px;
             transition: 0.3s;
             opacity: 0;
-            background-color: var(--pure-white);
-            box-shadow: 0px 6px 8px 1px rgb(0 0 0 / 14%);
+            border-radius: 4px;
+            background-color: var(--menu-page);
 
             &.show {
               display: block;
             }
 
             li {
+              margin: 0;
+
               .dropdown-item {
-                font-size: rem(14);
-                color: var(--text-color);
+                font-size: rem(16);
+                font-family: var(--font-verdana);
+                color: var(--text-white);
                 padding: 8px 16px;
                 transition: 0.3s;
                 white-space: normal;
 
                 &:hover {
                   color: var(--text-white);
-                  background-color: var(--secondary-01-var-1);
+                  background-color: unset;
                 }
               }
             }
@@ -193,6 +193,10 @@
           background-color: #008f85;
           border-radius: 4px;
           padding: 8px;
+
+          @media (max-width: 1200px) {
+            display: none;
+          }
 
           &::before {
           }
@@ -402,7 +406,7 @@
 
   display: none !important;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1200px) {
     display: flex !important;
   }
 
@@ -453,6 +457,18 @@
 
 .headerFixoMenu.menu-bar {
   &:not(.not-transparent) {
+    .idiomas {
+      img {
+        filter: invert(1);
+      }
+    }
+
+    .investidor {
+      img {
+        filter: invert(1);
+      }
+    }
+
     .header {
       .logo-white {
         display: none;
@@ -460,6 +476,7 @@
 
       .logo-colorida {
         display: block;
+        filter: invert(1);
       }
 
       .header-navigation-item {
@@ -482,9 +499,9 @@
 
       button {
         i {
-          &::before {
-            color: var(--text-color);
-          }
+          // &::before {
+          //   color: var(--text-color);
+          // }
         }
 
         img {
@@ -762,4 +779,30 @@
 .itens-fundos-menu {
   display: flex;
   justify-content: space-between;
+}
+
+.header-navigation-item:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: width 0.4s;
+  background-color: #008f85;
+  color: #008f85 !important;
+  margin-top: -23px;
+  position: absolute;
+}
+
+.header-navigation-item:hover:after {
+  width: 100%;
+}
+
+.header
+  .content
+  .nav-menu-header
+  > ul
+  .header-navigation-item
+  .dropdown-toggle.active {
+  transition: 0.3s;
+  color: #008f85 !important;
 }
