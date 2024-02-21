@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="images/favicon-60px.png" sizes="60x60" />
+    <link rel="shortcut icon" href="images/ffavicon-76px.png" sizes="76x76" />
+    <link
+      rel="apple-touch-icon"
+      href="images/favicon-120px.png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="images/favicon-152px.png"
+      sizes="152x152"
+    />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="../images/thumb.jpg" />
+    <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/basic-table.min.css" />
+    <link rel="stylesheet" href="vendor/slick.min.css" />
+    <link rel="stylesheet" href="vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="vendor/aos.css" />
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="vendor/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Mobile Menu -->
+
+    <div class="mobile-menu-div">
+      <div class="container container-responsivo-full">
+        <aside class="mobile-menu">
+          <div class="header-menu">
+            <picture class="branding">
+              <img class="logo-mobile" src="../images/-logo.svg" alt="" />
+            </picture>
+            <div class="div-menu-open">
+              <p>Fechar</p>
+              <button
+                type="button"
+                class="toggle-mobile-menu"
+                aria-label="Fechar Menu"
+                title="Fechar"
+              >
+                <span class="icon-nav"></span>
+              </button>
+            </div>
+          </div>
+          <div class="middle-header">
+            <div class="menu-tools">
+              <div class="div-pesquisar-mobile">
+                <button
+                  type="button"
+                  class="pesquisar-button"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  aria-label="Pesquisar"
+                  title="Pesquisar"
+                >
+                  <i class="icon-busca"></i>
+                </button>
+                <input
+                  name="ctl00$searchId"
+                  type="text"
+                  id="searchId"
+                  class="inputBuscaMobile"
+                  placeholder="Pesquisar"
+                />
+              </div>
+              <p>Aperte Enter para pesquisar</p>
+            </div>
+          </div>
+
+          <div class="menu-body">
+            <nav class="accordion nav-mobile" id="accordionMenuMobile">
+              <div class="accordion-item">
+                <h3>
+                  <a
+                    href="javascript:void(0);"
+                    class="accordion-button collapsed"
+                    aria-expanded="false"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobile-menu-1"
+                    aria-controls="mobile-menu-1"
+                    >QUEM SOMOS</a
+                  >
+                </h3>
+                <div
+                  id="mobile-menu-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMenuMobile"
+                >
+                  <div class="accordion-body">
+                    <ul class="pages">
+                      <li class="item">
+                        <a
+                          href="https://-inst.riprisma.com/sobre-nos"
+                          target="_self"
+                          >Sobre Nós</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="https://-inst.riprisma.com/esg" target="_self"
+                          >ESG</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3>
+                  <a
+                    href="javascript:void(0);"
+                    class="accordion-button collapsed"
+                    aria-expanded="false"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobile-menu-2"
+                    aria-controls="mobile-menu-2"
+                    >ESTRATÉGIAS</a
+                  >
+                </h3>
+                <div
+                  id="mobile-menu-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMenuMobile"
+                >
+                  <div class="accordion-body">
+                    <ul class="pages">
+                      <li class="item">
+                        <a
+                          href="https://-inst.riprisma.com/private-equity"
+                          target="_self"
+                          >Private Equity</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          href="https://-inst.riprisma.com/credito"
+                          target="_self"
+                          >Crédito</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3>
+                  <a
+                    href=""
+                    class="accordion-button collapsed"
+                    aria-expanded="false"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobile-menu-3"
+                    aria-controls="mobile-menu-3"
+                    >EQUIPE</a
+                  >
+                </h3>
+                <div
+                  id="mobile-menu-3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMenuMobile"
+                >
+                  <div class="accordion-body"><ul class="pages"></ul></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3>
+                  <a
+                    href="javascript:void(0);"
+                    class="accordion-button collapsed"
+                    aria-expanded="false"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mobile-menu-4"
+                    aria-controls="mobile-menu-4"
+                    >CONTATO</a
+                  >
+                </h3>
+                <div
+                  id="mobile-menu-4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionMenuMobile"
+                >
+                  <div class="accordion-body">
+                    <ul class="pages">
+                      <li class="item">
+                        <a
+                          href="https://-inst.riprisma.com/fale-conosco"
+                          target="_self"
+                          >Fale conosco</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          href="https://-inst.riprisma.com/carreira"
+                          target="_self"
+                          >Carreira</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a href="canal-de-denuncias" target="_self"
+                          >Canal de Denúncias</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Campo de Pesquisar -->
+
+    <div class="searchbox">
+      <div class="container container-responsivo-full">
+        <div class="row">
+          <div class="offset-xl-0 col-xl-12">
+            <div class="input-group">
+              <input
+                name="ctl00$ctl69"
+                type="text"
+                class="form-control inputBusca"
+                placeholder="Digite aqui a sua busca"
+              />
+
+              <div class="input-group-text">
+                <button
+                  type="button"
+                  class="close-searchbox"
+                  aria-label="Fechar Modal de Pesquiasr"
+                >
+                  <span class="icon-exibir"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-help">
+              <small> Aperte Enter para pesquisar </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="headerFixoMenu">
+      <div class="acessibillity-bar">
+        <div class="container container-responsivo-full">
+          <div class="content">
+            <div class="right-top-header">
+              <div class="accessibility-tools">
+                <p id="usuLogado" style="display: none">
+                  Olá,
+                  <span>
+                    <span id="LtrNomeUsuario"></span>
+                  </span>
+                </p>
+                <a href="./Acessibilidade">
+                  <small> Acessibilidade </small>
+                </a>
+
+                <button
+                  id="contrastToggle"
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title="Contraste"
+                >
+                  <span class="icon-contraste"></span>
+                </button>
+
+                <button
+                  id="increaseFont"
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title="Aumentar o tamanho da fonte"
+                >
+                  <span class="icon-aumentar-fonte" accesskey="4"></span>
+                </button>
+
+                <button
+                  id="decreaseFont"
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title="Diminuir o tamanho da fonte"
+                >
+                  <span class="icon-diminuir-fonte" accesskey="5"></span>
+                </button>
+              </div>
+
+              <div class="itens-menu-right">
+                <div class="idiomas">
+                  <img src="images/icons/icon-language.png" alt="" />
+
+                  <a
+                    id="hlkCulturaPtBr"
+                    accesskey="7"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    title=""
+                    class="active"
+                    href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                    data-bs-original-title="Mudar para português"
+                  >
+                    <span>EN</span>
+                  </a>
+                </div>
+
+                <div class="investidor">
+                  <a href="#">
+                    <img src="images/icons/icon-profile-menu.png" alt="" />
+                    <p>Portal do investidor</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container container-responsivo-full">
+          <div class="content">
+            <a class="logo-header" href="/" accesskey="1">
+              <img class="logo-white" src="../images/Logo.png" alt="" />
+              <img class="logo-colorida" src="../images/Logo.png" alt="" />
+            </a>
+            <nav class="nav-menu-header">
+              <ul>
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href="javascript:void(0);"
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-1"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >A VBI Real Estate</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="menu-item-1">
+                    <li class="item">
+                      <a
+                        class="dropdown-item"
+                        href="https://-inst.riprisma.com/sobre-nos"
+                        target="_self"
+                        >Sobre Nós</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a
+                        class="dropdown-item"
+                        href="https://-inst.riprisma.com/esg"
+                        target="_self"
+                        >Nossa História</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href="javascript:void(0);"
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-2"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >Fundos Listados</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="menu-item-2">
+                    <div class="itens-fundos-menu">
+                      <div class="tijolos">a</div>
+
+                      <div class="papel">b</div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href=""
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-3"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >Documentos</a
+                  >
+                </li>
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href="javascript:void(0);"
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-4"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >#VBInamidia</a
+                  >
+                </li>
+
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href="javascript:void(0);"
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-4"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >Ofertas Públicas</a
+                  >
+                </li>
+
+                <li class="dropdown header-navigation-item canalPai">
+                  <a
+                    href="javascript:void(0);"
+                    type="button"
+                    class="dropdown-toggle"
+                    id="menu-item-1"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    >Contato</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="menu-item-1">
+                    <li class="item">
+                      <a
+                        class="dropdown-item"
+                        href="https://-inst.riprisma.com/sobre-nos"
+                        target="_self"
+                        >Cadastrar Mailing</a
+                      >
+                    </li>
+                    <li class="item">
+                      <a
+                        class="dropdown-item"
+                        href="https://-inst.riprisma.com/esg"
+                        target="_self"
+                        >Fale Conosco / Mais informações</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-right-side">
+              <button
+                type="button"
+                class="open-searchbox"
+                data-bs-toggle="tooltip"
+                data-bs-trigger="hover"
+                data-bs-placement="bottom"
+                accesskey="2"
+                title="Pesquisar"
+              >
+                <i class="icon-busca"></i>
+              </button>
+
+              <button
+                type="button"
+                class="toggle-mobile-menu"
+                aria-label="Abrir Menu"
+              >
+                <span class="icon-nav" title="Abrir Menu"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="banner-internas">
+      <img src="images/banner-internas.png" alt="" />
+
+      <div class="texts-banner-internas">
+        <div class="container container-internas">
+          <h1>SOBRE NÓS</h1>
+
+          <div class="last-itens-banner">
+            <div class="first-itens-opacity">
+              <a href=""> <img src="images/icons/icon-home.png" alt="" /></a>
+              <a href=""
+                ><img
+                  src="images/icons/icon-arrow-home.png"
+                  class="img-arrow"
+                  alt=""
+              /></a>
+              <a href=""><p>A VBI Real Estate</p></a>
+              <a href=""
+                ><img
+                  src="images/icons/icon-arrow-home.png"
+                  class="img-arrow"
+                  alt=""
+              /></a>
+            </div>
+            <a href=""><p class="last-p">Sobre Nós</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="somos-vbi">
+      <div class="container container-internas">
+        <div class="title-somos-vbi">
+          <h1>Somos a <strong>VBI Real Estate</strong></h1>
+          <p>
+            uma <strong>gestora de recursos</strong> com
+            <strong>foco exclusivo no mercado imobiliário</strong>, operando no
+            Brasil desde 2006
+          </p>
+        </div>
+
+        <div class="texts-somos-vbi">
+          <p>
+            Nosso time se mantém <strong>guiado</strong> pela
+            <strong
+              >constante busca das melhores oportunidades, investindo no
+              desenvolvimento</strong
+            >
+            e na <strong>gestão de projetos</strong> nos principais setores do
+            mercado imobiliário ao longo de toda estrutura de capital,
+            <strong>orientados pelos valores</strong> que norteiam a nossa
+            história:
+            <strong>transparência, respeito e foco nos resultados.</strong>
+          </p>
+
+          <a href="">Conheça nossa história</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-somos-vbi">
+      <div class="new-parallax">
+        <section>
+          <iframe
+            width="1903"
+            height="776"
+            src="https://www.youtube.com/embed/LXb3EKWsInQ"
+            title="COSTA RICA IN 4K 60fps HDR (ULTRA HD)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section>
+          <div class="container container-internas">
+            <div class="title-gestao">
+              <h1>Gestão</h1>
+              <h6>VBI REAL ESTATE</h6>
+            </div>
+          </div>
+          <div class="texts-gestao">
+            <div class="container container-internas">
+              <p>
+                Acumulamos <strong>R$ 9,5 Bilhões</strong> captados através de
+                fundos de private equity, veículos de co-investimento, joint
+                ventures e fundo de investimento imobiliário listados. São
+                <strong>mais de 100 investimentos</strong> selecionados com
+                <strong>foco em localização</strong>,
+                <strong>altas especificações técnicas</strong>, preocupação
+                <strong>socioambiental</strong> e
+                <strong>qualidade dos inquilinos</strong>
+                nos principais segmentos imobiliários.
+              </p>
+
+              <p>
+                Nossa base de cotistas conta com investidores institucionais e
+                individuais, nacionais e estrangeiros e ao longo dos mais de 15
+                anos de atuação e é gerida por profissionais com vasta
+                experiência no mercado imobiliário, através de uma estrutura
+                verticalizada com equipe dedicada em cada segmento e atuação na
+                gestão de fundos de renda e de desenvolvimento, como ilustrado
+                abaixo:
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="image-somos">
+      <div class="container container-responsivo-full">
+        <img src="images/image-somos.png" alt="" />
+      </div>
+    </div>
+
+    <div class="desenvolvido-vbi">
+      <div class="container container-internas">
+        <div class="title-desenvolvido">
+          <h1>DESENVOLVIDOS</h1>
+          <h6>PELA VBI</h6>
+          <p>
+            Gestão ativa de <strong>Fundos de Private Equity</strong> com foco
+            em projetos de desenvolvimento imobiliário e operações estruturadas
+            de crédito imobiliário.
+          </p>
+        </div>
+
+        <div class="cards-dev">
+          <div class="cards">
+            <h3>+40 ativos</h3>
+            <p>desenvolvidos desde 2008</p>
+          </div>
+
+          <div class="cards">
+            <h3>+224 mil m²</h3>
+            <p>de ABL em galpões logísticos</p>
+          </div>
+
+          <div class="cards">
+            <h3>+68 mil m²</h3>
+            <p>de ABL em edifícios corporativos</p>
+          </div>
+
+          <div class="cards">
+            <p>Plataforma de moradia estudantil com mais de</p>
+            <h3>2.100 camas</h3>
+          </div>
+
+          <div class="cards">
+            <h3>+ R$ 492 MM</h3>
+            <p>investidos em galpões logísticos</p>
+          </div>
+
+          <div class="cards">
+            <h3>+ R$ 888 MM</h3>
+            <p>investidos em edifícios corporativos (AAA)</p>
+          </div>
+        </div>
+
+        <div class="portfolio-dev">
+          <div class="title-portfolio">
+            <h4>Conheça alguns ativos desenvolvidos pela VBI:</h4>
+          </div>
+
+          <div class="container-cards">
+            <div class="cards-others">
+              <div class="texts-cards">
+                <h5>SBC</h5>
+
+                <a href="">
+                  <img src="images/icons/icon-plus.png" alt="" />
+                  <p>Ver mais informações</p>
+                </a>
+              </div>
+
+              <div class="bg-cards">
+                <img src="images/bg-cards-1.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-others">
+              <div class="texts-cards">
+                <h5>SBC</h5>
+
+                <a href="">
+                  <img src="images/icons/icon-plus.png" alt="" />
+                  <p>Ver mais informações</p>
+                </a>
+              </div>
+
+              <div class="bg-cards">
+                <img src="images/bg-cards-2.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-others">
+              <div class="texts-cards">
+                <h5>SBC</h5>
+
+                <a href="">
+                  <img src="images/icons/icon-plus.png" alt="" />
+                  <p>Ver mais informações</p>
+                </a>
+              </div>
+
+              <div class="bg-cards">
+                <img src="images/bg-cards-3.png" alt="" />
+              </div>
+            </div>
+
+            <div class="cards-others">
+              <div class="texts-cards">
+                <h5>SBC</h5>
+
+                <a href="">
+                  <img src="images/icons/icon-plus.png" alt="" />
+                  <p>Ver mais informações</p>
+                </a>
+              </div>
+
+              <div class="bg-cards">
+                <img src="images/bg-cards-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script
+      rel="stylesheet"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/carrosel.js"></script>
+
+    <script defer src="vendor/counterup.js"></script>
+    <script defer src="vendor/menuFixo.js"></script>
+    <script defer src="vendor/aos.js"></script>
+    <script defer src="vendor/basic-table.min.js"></script>
+    <script defer src="vendor/slick.min.js"></script>
+    <script defer src="js/zoomScroll.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="../js/Master.js"></script>
+  </body>
+</html>

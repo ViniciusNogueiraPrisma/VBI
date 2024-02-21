@@ -37,6 +37,12 @@ td {
   font-weight: normal;
 }
 
+@media (min-width: 1450px) {
+  .container-internas {
+    max-width: 1152px !important;
+  }
+}
+
 .container {
   @media (min-width: 992px) {
     max-width: 991px;
@@ -45,7 +51,7 @@ td {
     max-width: 1200px;
   }
 
-  @media(min-width: 1450px) {
+  @media (min-width: 1450px) {
     max-width: 1414px;
   }
 
