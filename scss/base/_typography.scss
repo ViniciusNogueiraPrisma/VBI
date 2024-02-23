@@ -257,7 +257,7 @@ a {
   &::after {
     content: "";
     display: block;
-    background: url("../images/icons/icon-arrow-right.svg") no-repeat center;
+    background: url("../../images/icons/icon-arrow-right.svg") no-repeat center;
     background-size: contain;
     margin-left: 0px;
     height: 0px;
@@ -266,12 +266,11 @@ a {
   }
 
   &:hover {
-    font-weight: 700;
-
     &::after {
       margin-left: 10px;
       height: 15px;
       width: 15px;
+      filter: invert(1) grayscale(1) brightness(9.5);
     }
   }
 }
@@ -291,4 +290,8 @@ a {
     filter: brightness(0) invert(8%) sepia(79%) saturate(4033%)
       hue-rotate(228deg) brightness(97%) contrast(93%);
   }
+}
+
+a {
+  text-decoration: none;
 }

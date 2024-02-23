@@ -191,7 +191,7 @@
 
         .icon-busca {
           background-color: #008f85;
-          border-radius: 4px;
+          border-radius: 2px;
           padding: 8px;
 
           @media (max-width: 1200px) {
@@ -459,13 +459,13 @@
   &:not(.not-transparent) {
     .idiomas {
       img {
-        filter: invert(1);
+        // filter: invert(1);
       }
     }
 
     .investidor {
       img {
-        filter: invert(1);
+        // filter: invert(1);
       }
     }
 
@@ -476,7 +476,7 @@
 
       .logo-colorida {
         display: block;
-        filter: invert(1);
+        // filter: invert(1);
       }
 
       .header-navigation-item {
@@ -525,26 +525,26 @@
     .acessibillity-bar {
       .content {
         span {
-          color: var(--text-color);
+          // color: var(--text-color);
 
           &::before {
-            color: var(--text-color);
+            // color: var(--text-color);
           }
         }
 
         p {
-          color: var(--text-color) !important;
+          // color: var(--text-color) !important;
 
           &::after {
-            background-color: var(--text-color) !important;
+            // background-color: var(--text-color) !important;
           }
         }
 
         a {
-          color: var(--text-color) !important;
+          // color: var(--text-color) !important;
 
           small {
-            color: var(--text-color) !important;
+            // color: var(--text-color) !important;
           }
         }
       }

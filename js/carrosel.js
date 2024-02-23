@@ -1,3 +1,13 @@
+var swiperPortfolio = new Swiper(".swiper-portfolio", {
+  effect: "slide",
+  spaceBetween: "24",
+  slidesPerView: "auto",
+  pagination: {
+    clickable: "true",
+    el: ".swiper-pagination",
+  },
+});
+
 var swiperTime = new Swiper(".swiper-time", {
   slidesPerView: "auto",
   spaceBetween: "24",

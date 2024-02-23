@@ -1,6 +1,6 @@
 .acessibillity-bar {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   background: #1d1d1d;
   transition: 0.3s;
@@ -10,7 +10,7 @@
   }
 
   &.fixed {
-    background-color: var(--grey-scale-01);
+    // background-color: var(--grey-scale-01);
   }
 
   .content {
