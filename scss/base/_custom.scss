@@ -43,6 +43,12 @@ td {
   }
 }
 
+@media (min-width: 1450px) {
+  .container-docs {
+    max-width: 920px !important;
+  }
+}
+
 .container {
   @media (min-width: 992px) {
     max-width: 991px;
