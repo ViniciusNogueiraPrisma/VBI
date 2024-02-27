@@ -745,8 +745,14 @@
 .segmento-home {
   background-color: black;
   padding: 140px 0px;
-  background-image: url(../../images/bg_segmento.jpg);
+  background: linear-gradient(
+      0deg,
+      rgba(67, 67, 67, 0.9) 0%,
+      rgba(67, 67, 67, 0.9) 100%
+    ),
+    url(../../images/bg-home.jpg), lightgray 50% / cover no-repeat;
   background-size: cover;
+  background-blend-mode: luminosity;
   background-repeat: no-repeat;
 
   .title-segmento {
@@ -1020,7 +1026,7 @@
   }
 
   .title-segmento {
-    margin-bottom: 390px;
+    margin-bottom: 370px;
 
     @media (max-width: 767px) {
       margin-bottom: 180px;
@@ -1092,7 +1098,7 @@
 
     color: #474747;
     font-size: 48px;
-    font-family: Verdana;
+    font-family: var(--font-verdana-bold);
     font-weight: 700;
     line-height: 52.8px;
     word-wrap: break-word;
@@ -1110,7 +1116,7 @@
     line-height: 29.4px;
     word-wrap: break-word;
     margin-bottom: 18px;
-    width: 817px;
+    width: 858px;
 
     @media (max-width: 991px) {
       width: 100%;

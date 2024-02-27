@@ -269,6 +269,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
+
+    @media (max-width: 800px) {
+      font-size: 34px;
+    }
   }
 }
 
@@ -298,6 +302,12 @@
   gap: 16px;
   align-items: center;
   padding-top: 32px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
 
   p {
     font-family: "Inter" !important;
@@ -375,6 +385,12 @@
   gap: 80px;
   margin-top: 40px;
 
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+  }
+
   p {
     color: var(--Font-Text-text-color-default, #fff);
     font-family: var(--font-verdana);
@@ -384,6 +400,10 @@
     line-height: 150%;
 
     width: 50%;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
   }
 
   a {
@@ -428,6 +448,10 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #474747;
     -webkit-text-stroke-width: 2px;
+
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
   }
 
   h6 {
@@ -440,6 +464,11 @@
     font-weight: 700;
     line-height: 132%;
     margin-left: 40px;
+
+    @media (max-width: 991px) {
+      font-size: 26px;
+      margin-left: 0px;
+    }
   }
 }
 
@@ -477,6 +506,10 @@
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-color: #474747;
     -webkit-text-stroke-width: 2px;
+
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
   }
 
   h6 {
@@ -489,6 +522,11 @@
     font-weight: 700;
     line-height: 132%;
     margin-left: 40px;
+
+    @media (max-width: 991px) {
+      margin-left: 0;
+      font-size: 26px;
+    }
   }
 
   p {
@@ -507,6 +545,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   margin-top: 24px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr !important;
+  }
 
   .cards {
     background-color: #636464;
@@ -548,6 +594,11 @@
 .portfolio-dev {
   margin-top: 64px;
 
+  @media (max-width: 575px) {
+    overflow: hidden;
+    position: relative;
+  }
+
   .title-portfolio {
     margin-bottom: 24px;
 
@@ -568,8 +619,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 
+    @media (max-width: 1199px) {
+      grid-template-columns: 1fr;
+    }
+
     .cards-others {
       width: 564px;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
 
       .texts-cards {
         position: absolute;
@@ -623,6 +682,27 @@
             rgba(0, 0, 0, 0.45) 39%,
             rgba(0, 0, 0, 0.45) 100%
           );
+
+          @media (max-width: 1199px) {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 967px;
+          }
+
+          @media (max-width: 991px) {
+            max-width: 696px;
+          }
+
+          @media (max-width: 767px) {
+            max-width: 516px;
+          }
+
+          @media (max-width: 575px) {
+            max-width: 91.447917vw;
+          }
         }
 
         img {
@@ -630,6 +710,10 @@
           border-radius: 8px;
           height: 500px;
           object-fit: cover;
+
+          @media (max-width: 1199px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -642,15 +726,36 @@
   .title-desenvolvido {
     h1 {
       font-size: 48px;
+
+      @media (max-width: 1199px) {
+        font-size: 34px;
+      }
     }
 
     h6 {
       font-size: 56px;
+
+      @media (max-width: 1199px) {
+        font-size: 38px;
+        margin-left: 0px;
+      }
     }
   }
 
   .cards-dev {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr 1fr !important;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr !important;
+    }
 
     .cards {
       padding-top: 48px;
@@ -687,16 +792,34 @@
     display: flex;
     gap: 80px;
 
+    @media (max-width: 1034px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+
     .title-desenvolvido {
       width: 50%;
 
+      @media (max-width: 1034px) {
+        width: 100%;
+      }
+
       h1 {
         font-size: 48px;
+
+        @media (max-width: 1034px) {
+          font-size: 34px;
+        }
       }
 
       h6 {
         -webkit-text-stroke-width: 2px;
         font-size: 48px;
+
+        @media (max-width: 1034px) {
+          font-size: 34px;
+          margin-left: 0px;
+        }
       }
     }
 
@@ -705,6 +828,10 @@
       border: 1px solid #00a99d;
       padding: 24px;
       width: 50%;
+
+      @media (max-width: 1034px) {
+        width: 100%;
+      }
 
       .text-frame {
         text-align: center;
@@ -716,6 +843,10 @@
           font-weight: 400;
           line-height: 29.4px;
           word-wrap: break-word;
+
+          @media (max-width: 1034px) {
+            font-size: 19px;
+          }
         }
       }
     }
@@ -729,11 +860,20 @@
 
     h1 {
       font-size: 48px;
+
+      @media (max-width: 1034px) {
+        font-size: 34px;
+      }
     }
 
     h6 {
       font-size: 48px;
       -webkit-text-stroke-width: 2px;
+
+      @media (max-width: 1034px) {
+        font-size: 34px;
+        margin-left: 0px;
+      }
     }
   }
 }
@@ -744,6 +884,10 @@
   .swiper-wrapper {
     .swiper-slide {
       width: 417px !important;
+
+      @media (max-width: 626px) {
+        width: 100% !important; 
+      }
 
       .content-slide {
         .img-time {
@@ -811,16 +955,29 @@
   .title-desenvolvido {
     h1 {
       font-size: 48px;
+
+      @media (max-width: 1034px) {
+        font-size: 38px;
+      }
     }
 
     h6 {
       font-size: 48px;
       -webkit-text-stroke-width: 2px;
+
+      @media (max-width: 1034px) {
+        font-size: 38px;
+        margin-left: 0px;
+      }
     }
   }
 }
 
 .texts-estrutura {
+  @media (max-width: 1034px) {
+    margin-top: 32px;
+  }
+
   p {
     color: #474747;
     font-size: 14px;
