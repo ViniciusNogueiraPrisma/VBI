@@ -388,6 +388,10 @@
     align-items: end;
     gap: 12px;
 
+    @media (max-width: 575px) {
+      padding-left: 24px;
+    }
+
     @media (max-width: 1200px) {
       left: unset !important;
       right: unset !important;
@@ -442,6 +446,12 @@
   text-align: start;
   flex-direction: column;
 
+  @media (max-width: 767px) {
+    .primary-button {
+      // margin-bottom: 75px;
+    }
+  }
+
   h1 {
     margin: 0;
     padding: 0;
@@ -452,6 +462,10 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #fff;
     -webkit-text-stroke-width: 2px;
+
+    @media (max-width: 767px) {
+      font-size: 38px;
+    }
   }
 
   h3 {
@@ -466,6 +480,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
+
+    @media (max-width: 767px) {
+      margin-left: 0px;
+      font-size: 38px;
+      -webkit-text-stroke-width: 1px;
+    }
   }
 
   p {
