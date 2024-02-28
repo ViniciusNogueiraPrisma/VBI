@@ -99,7 +99,7 @@ $(".menu-itens a").on("click", function (e) {
   $(this).addClass("active");
 
   var target = $(this).attr("href");
-  var offset = $(target).offset().top - 50;
+  var offset = $(target).offset().top - 100;
   $("html, body").animate(
     {
       scrollTop: offset,
