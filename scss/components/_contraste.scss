@@ -290,6 +290,518 @@
   }
 
   .mySwiper-banner .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+  }
+
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-toggle.active {
+    color: #fff !important;
+  }
+
+  .header-navigation-item:after {
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-toggle:hover {
+    color: #fff !important;
+  }
+
+  .texts-missao h1 {
+    color: #fff;
+  }
+
+  .texts-missao p {
+    color: #fff;
+  }
+
+  .primary-button {
     background-color: #000;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .segmento-home .cards-segmento .card {
+    background-color: #1d1d1d;
+  }
+
+  .plataforma-home {
+    background-color: #1d1d1d;
+    background-blend-mode: color-burn;
+  }
+
+  .cards-plataforma .cards-content .card-2 {
+    background-color: #000;
+  }
+
+  .historia-home .title-segmento h6 {
+    color: var(--Grayscale-grayscale-color-900, #000);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--Grayscale-grayscale-color-900, #000);
+  }
+
+  .texts-timeline h5 {
+    color: #000;
+  }
+
+  .time-vbi h1 {
+    color: white;
+  }
+
+  .time-vbi p {
+    color: white;
+  }
+
+  .time-vbi a {
+    background-color: #1d1d1d;
+    border: 1px solid white;
+  }
+
+  .container-socios .title-segmento h1 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+  .container-socios .title-segmento h6 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .images-socios .image .text h2 {
+    color: #fff;
+  }
+
+  .images-socios .image .text h4 {
+    color: #fff;
+  }
+
+  .itens-footer .newslatter .input-newslatter a {
+    background-color: #000;
+  }
+
+  #voltar-topo-btn {
+    img {
+      filter: grayscale(1) invert(1);
+    }
+  }
+
+  .header-internas .header {
+    background-color: #1d1d1d !important;
+  }
+
+  .header-internas .header-navigation-item .dropdown-toggle {
+    color: #fff !important;
+  }
+
+  .header-internas
+    .header
+    .content
+    .header-right-side
+    .open-searchbox
+    .icon-busca {
+    background-color: #000 !important;
+  }
+
+  .header-internas .logo-header img {
+    filter: unset !important;
+  }
+
+  .banner-internas::before {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 2.21) 0%,
+      rgba(0, 0, 0, 0.51) 100%
+    );
+  }
+
+  .somos-vbi {
+    background-color: #1d1d1d;
+  }
+
+  .new-parallax section {
+    background-color: #1d1d1d;
+  }
+
+  .title-gestao h1 {
+    color: #fff;
+    font-family: var(--font-verdana-bold);
+    font-size: 34px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+  }
+
+  .title-gestao h6 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .texts-gestao {
+    background-color: #1d1d1d;
+  }
+
+  .desenvolvido-vbi {
+    background-color: #1d1d1d;
+  }
+
+  .title-desenvolvido h1 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .title-desenvolvido h6 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .title-desenvolvido p {
+    color: #fff;
+  }
+  .portfolio-dev .title-portfolio h4 {
+    color: #fff;
+  }
+
+  .investidores-vbi .content-invest .frame-invest {
+    border: 1px solid #fff;
+  }
+
+  .investidores-vbi .content-invest .frame-invest .text-frame p {
+    color: #fff;
+  }
+
+  .img-invest.full-screen-main-div img {
+    filter: invert(1) grayscale(1) brightness(7.5);
+  }
+
+  .swiper-time .swiper-pagination .swiper-pagination-bullet {
+    background-color: #fff;
+  }
+
+  .texts-estrutura p {
+    color: #fff;
+  }
+
+  .texts-estrutura .list-estrutura ul li {
+    color: #ffffff;
+  }
+
+  .texts-estrutura .list-estrutura ul li::marker {
+    color: #ffffff;
+  }
+
+  .contents .box-1 h1 {
+    color: #ffffff;
+  }
+
+  .contents .box-1 p {
+    color: #ffffff;
+  }
+
+  .contents .box-1 p strong {
+    color: #ffffff;
+  }
+
+  .cards-banner .card {
+    background-color: #1d1d1d;
+    border: 1px solid white !important;
+  }
+
+  .spacing-menu {
+    background-color: #1d1d1d;
+  }
+
+  .menu-filter-fixed {
+    background-color: #1d1d1d;
+  }
+
+  .rendimento-fundos .title-rendimento h1 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .rendimento-fundos .title-rendimento p {
+    color: #fff;
+  }
+
+  .table-rendimento .table thead tr th {
+    color: #fff;
+  }
+
+  .table-rendimento .table tbody tr th {
+    color: #fff;
+  }
+
+  .table-rendimento .table tbody tr:nth-child(even) {
+    background-color: unset;
+  }
+
+  .cards-fii .card {
+    background-color: unset;
+
+    &:hover {
+      background-color: unset;
+    }
+  }
+
+  .cards-fii .card img {
+    filter: invert(1) grayscale(1) brightness(5.5);
+  }
+
+  .cards-fii .card p {
+    color: #fff;
+  }
+
+  .cards-fii .card h6 {
+    color: #fff;
+  }
+
+  .portfolio-fii {
+    background-color: unset;
+  }
+
+  .portfolio-fii .title-portfolio h1 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .portfolio-fii .title-portfolio p {
+    color: #fff;
+  }
+
+  .carrosel-portfolio .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #fff !important;
+  }
+
+  .link-com-arrow::after {
+    content: unset !important;
+  }
+
+  .contato-portfolio a {
+    background-color: #fff !important;
+    color: black;
+  }
+
+  .regulamento .title-regulamento h1 {
+    color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .contato-portfolio p {
+    color: #fff;
+  }
+
+  .lists-regulamento .item-list .title-list h4 {
+    color: #fff;
+  }
+
+  .lists-regulamento .item-list .imgs-list .main-image {
+    filter: grayscale(1) brightness(10);
+  }
+
+  .lists-regulamento .item-list:hover {
+    // border-bottom: #fff !important;
+  }
+
+  .lists-regulamento .item-list:hover .imgs-list .last-image {
+    filter: invert(1) grayscale(1) brightness(5.5);
+  }
+
+  .lists-regulamento .item-list:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .lists-regulamento .item-list:hover .title-list h4 {
+    color: #fff;
+  }
+
+  .docs {
+    background-color: #000;
+  }
+
+  .disclaimer-fundos {
+    background-color: unset;
+  }
+
+  .docs .title-docs a {
+    color: #000;
+    font-weight: 900;
+  }
+
+  .disclaimer-fundos .box-disclaimer span {
+    color: #fff;
+  }
+
+  .disclaimer-fundos .box-disclaimer ul li {
+    color: #fff;
+  }
+
+  .main-content .first-filter .filtro-form .form-select-filtro label {
+    color: #fff;
+  }
+
+  .main-content .content table thead tr th {
+    color: #fff;
+  }
+
+  .filter-content .filter .title-filter {
+    background-color: #000;
+  }
+
+  .filter-content .filter .filter-accordions .card-header h5 button {
+    background-color: #1d1d1d;
+    color: white;
+    border-bottom: 1px solid gray !important;
+  }
+
+  .filter-content .filter .filter-accordions .card-header h5 button img {
+    filter: invert(1) grayscale(1) brightness(18);
+  }
+
+  .filter-content .filter .filter-accordions .card-body ul li a {
+    color: white;
+  }
+
+  .main-content .content table tbody tr img {
+    filter: grayscale(1) brightness(19) !important;
+  }
+
+  .container-midia .title-filter h2 {
+    color: white;
+  }
+
+  .container-midia .title-filter .filtro-form .form-select-filtro label {
+    color: white;
+  }
+
+  .card {
+    background-color: #1d1d1d;
+    border: 1px solid white;
+  }
+
+  .itens-midia .card .infos-card p {
+    color: white;
+  }
+
+  .itens-midia .card .infos-card span {
+    color: white;
+  }
+  .itens-midia .card .infos-card a {
+    background-color: #000;
+  }
+
+  .container-report .titles-report a {
+    background-color: #000;
+  }
+
+  .container-report .titles-report h1 {
+    color: white;
+  }
+
+  .container-report .texts-report h5 {
+    color: white;
+  }
+
+  .container-report .texts-report p {
+    color: white;
+  }
+
+  .container-report .texts-report .links-report a:nth-child(2) {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .container-report .texts-report .links-report a:first-of-type {
+    background-color: #000;
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+
+  .container-doc .title-filter .title h2 {
+    color: white;
+  }
+
+  .title-contato h2 {
+    color: white;
+  }
+
+  .title-contato p {
+    color: white;
+  }
+
+  .cards-contato .card a {
+    background-color: #000;
+  }
+
+  .cards-contato .card {
+    background-color: unset;
+    border: 1px solid white !important;
+  }
+
+  .cards-contato .card h6 {
+    color: white;
+  }
+
+  .cards-contato .card p {
+    color: white;
+  }
+
+  .title-infos-contato h2 {
+    color: white;
+  }
+
+  .main-infos .texts .inputs-contato label {
+    color: white;
+  }
+
+  .main-infos .box-info {
+    background-color: #000;
+  }
+
+  .chk-contato .checkbox p {
+    color: #fff;
+  }
+
+  a {
+    color: white;
+  }
+
+  .links-contato a:first-of-type {
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+
+  .links-contato a:nth-child(2) {
+    background-color: #000;
+  }
+
+  .box-checkbox {
+    background-color: unset;
+  }
+
+  .title-box-chk h1 {
+    color: #fff;
+  }
+
+  .box-checkbox .checkboxs-text .form-check-input {
+    border: 1px solid black !important;
+  }
+
+  .box-checkbox .checkboxs-text p {
+    color: #fff;
+
   }
 }
