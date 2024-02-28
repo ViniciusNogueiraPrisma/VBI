@@ -2457,7 +2457,9 @@
 }
 
 .container-doc {
-  padding: 80px 0px;
+  // padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   .title-filter {
     display: flex;
