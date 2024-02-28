@@ -1,6 +1,6 @@
 .acessibillity-bar {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   background: #1d1d1d;
   transition: 0.3s;
@@ -217,7 +217,7 @@
 
   transform: translateY(-100%);
 
-  padding: 32px 0;
+  padding: 24px 0;
 
   z-index: 1000;
 
@@ -500,6 +500,10 @@
     right: 24px;
     width: fit-content;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     @media (max-width: 1008px) {
       top: 14px;
       right: 14px;
@@ -508,10 +512,7 @@
     span {
       color: #00a99d;
       font-size: 26px;
-      line-height: 0;
-      top: 4px;
-      position: relative;
-      left: 1px;
+      line-height: 21px;
     }
   }
 }

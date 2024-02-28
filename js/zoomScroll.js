@@ -24,7 +24,7 @@ window.onload = () => {
       if ($(".hidLinguagem").val() == "ptg") {
         aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Clique para ampliar";
       }else{
-        aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Click to enlarge";
+        aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Clique para ampliar";
       }
       aviso.style.display = 'flex';
       aviso.style.alignItems = 'center';
@@ -41,7 +41,7 @@ window.onload = () => {
       if ($(".hidLinguagem").val() == "ptg") {
         aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Clique para ampliar";
       }else{
-        aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Click to enlarge";
+        aviso.innerHTML = "<img src='https://files.workr.com.br/ViewImage.aspx?image=705VTKayo2XHUcL7p2AAaw==' alt='lupa'/> Clique para ampliar";
       }
       aviso.style.display = 'flex';
       aviso.style.alignItems = 'center';
