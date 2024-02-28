@@ -105,7 +105,7 @@ $(".menu-itens a").on("click", function (e) {
     {
       scrollTop: offset,
     },
-    300
+    400
   );
 });
 

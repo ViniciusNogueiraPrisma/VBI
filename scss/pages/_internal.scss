@@ -1301,11 +1301,24 @@
   z-index: 100;
   top: 0;
 
+  @media(max-width: 800px) {
+    position: relative;
+  }
+
   .menu-itens {
     padding: 32px 0px;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
+
+    // @media(max-width: 800px) {
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
+
+    //   a {
+  
+    //   }
+    // }
 
     a.active {
       color: white;
