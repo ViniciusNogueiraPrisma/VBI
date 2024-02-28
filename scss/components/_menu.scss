@@ -15,7 +15,7 @@ body {
 }
 
 .mobile-menu {
-  overflow-y: auto;
+  // overflow-y: clip;
   top: 0px;
   right: 0;
   bottom: 0;
@@ -44,6 +44,7 @@ body {
 
       .logo-mobile {
         margin-right: 8px;
+        filter: invert(1) grayscale(1);
       }
 
       p {
@@ -87,10 +88,12 @@ body {
         margin: 0;
         background: none;
         border: none;
+        display: flex;
+        align-items: center;
 
         i {
           &::before {
-            color: var(--text-white);
+            color: #1d1d1d;
           }
         }
       }
@@ -102,17 +105,17 @@ body {
         font-family: var(--font-text-2);
         width: 100%;
         background: none;
-        color: var(--text-white);
+        color: #1d1d1d;
 
         &::placeholder {
-          color: var(--text-white);
+          color: #1d1d1d;
         }
       }
     }
 
     > p {
       font-size: rem(12);
-      color: var(--text-white);
+      color: #1d1d1d;
       margin-top: 8px;
     }
   }
@@ -176,7 +179,7 @@ body {
   }
 
   .nav-mobile {
-    margin-top: 12px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -207,7 +210,7 @@ body {
     }
 
     .accordion-item {
-      margin-bottom: 16px;
+      margin-bottom: 19px;
       background: none;
       border: none;
       color: var(--text-white);
@@ -216,18 +219,6 @@ body {
       .accordion-collapse {
         background-color: transparent;
       }
-      /*
-			&.link-externo{
-				display: flex;
-				align-items: center;
-				gap: 8px;
-
-				&::after{
-					content: url("../images/icon/icon-externo.svg");
-					display: block;
-					height: 18px;
-				}
-			}*/
 
       h3 {
         margin: 0;
@@ -237,19 +228,27 @@ body {
       .accordion-button {
         padding: 0px;
         position: relative;
-        color: var(--text-white);
         border-radius: 0;
         background: transparent;
         gap: 10px;
-        font-size: rem(20);
-        font-weight: 600;
         align-items: center;
+
+        color: var(--Menu-Canal-color-menu-canal-default, #474747);
+
+        /* Menu/Mobile/default */
+        font-family: Verdana;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
 
         &::after {
           content: none;
         }
 
         &::before {
+          display: none !important;
+
           content: "\e900";
           font-family: var(--font-icomoon);
           transform: rotate(0deg);
@@ -273,6 +272,9 @@ body {
           background: none;
           border-bottom: none;
           box-shadow: none;
+          color: #008f85;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #008f85;
         }
       }
 
@@ -280,20 +282,26 @@ body {
         padding: 0;
 
         .pages {
-          padding-left: 24px;
-          margin: 16px 0;
+          padding-left: 0px;
+          margin: 0px;
+          margin-top: 8px;
 
           li {
             list-style: none;
-            margin-bottom: 8px;
-
-            @media (max-width: 575px) {
-              margin-bottom: 12px;
-            }
+            margin-bottom: 0px;
+            padding: 8px 16px;
+            background-color: #474747;
 
             a {
               text-decoration: none;
-              color: var(--text-white);
+              color: var(--Menu-Pgina-color-menu-page-text-default, #fff);
+
+              /* Body/lg-regular */
+              font-family: Verdana;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 24px */
             }
 
             /*
@@ -351,7 +359,12 @@ body {
   transform: translateX(500px);
   transition: 0.6s;
   right: 0;
-  background-color: var(--primary-01-default);
+  background-color: #fff;
+
+  .container {
+    overflow: auto !important;
+    padding-bottom: 64px;
+  }
 
   .menu-body {
     display: flex;
@@ -359,6 +372,8 @@ body {
 
   &.active {
     transform: translateX(0px);
+    overflow: auto;
+    padding-bottom: 64px;
 
     .mobile-menu {
       right: 0;
@@ -366,7 +381,7 @@ body {
       .toggle-mobile-menu {
         span {
           transform: rotate(45deg);
-          background: var(--text-white);
+          background-color: #1d1d1d;
 
           &::before {
             top: 0;
@@ -376,7 +391,7 @@ body {
 
           &::after {
             bottom: 0;
-            background: var(--text-white);
+            background-color: #1d1d1d;
             transform: rotate(90deg);
           }
         }
@@ -462,4 +477,105 @@ body {
   max-width: fit-content !important;
   width: fit-content !important;
   border-radius: 4px;
+}
+
+.idiomas-menu-mobile {
+  margin-top: 24px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.idiomas-menu-mobile {
+  display: flex;
+
+  .active-idioma {
+    border-right: 1px solid black;
+    padding-right: 8px;
+    p {
+      font-weight: 900 !important;
+    }
+  }
+
+  .itens-idioma:last-child {
+    padding-left: 8px;
+  }
+
+  .itens-idioma {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    p {
+      color: var(--grayscale-Black, #111);
+
+      /* 📦 library/Text/lg, bold */
+      font-family: Verdana;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 25.6px */
+    }
+  }
+}
+
+.social-mobile {
+  padding-top: 16px;
+  border-top: 1px solid #474747;
+
+  h1 {
+    color: var(--Font-Text-text-color-medium, #474747);
+
+    /* Body/md-regular */
+    font-family: Verdana;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+
+  .itens-social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+
+    .itens {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        color: var(--Font-Text-text-color-medium, #474747);
+
+        /* Body/md-regular */
+        font-family: Verdana;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+      }
+    }
+  }
+}
+
+.portal-investidor {
+  border-top: 1px solid #474747;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  a {
+    text-decoration: none;
+    color: var(--Menu-Canal-color-menu-canal-default, #474747);
+
+    /* Menu/Mobile/default */
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+  }
 }

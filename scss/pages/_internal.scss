@@ -1025,6 +1025,10 @@
 .timeline {
   padding: 80px 0px;
   overflow: hidden;
+
+  .container {
+    overflow: hidden !important;
+  }
 }
 
 .content-reverse {
