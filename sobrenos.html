@@ -403,11 +403,31 @@
                     data-bs-toggle="dropdown"
                     >Fundos Listados</a
                   >
-                  <ul class="dropdown-menu" aria-labelledby="menu-item-2">
+                  <ul
+                    class="dropdown-menu dropdown-fundos"
+                    aria-labelledby="menu-item-2"
+                  >
                     <div class="itens-fundos-menu">
-                      <div class="tijolos">a</div>
+                      <div class="tijolos">
+                        <h6>Tijolo</h6>
+                        <a href="#">LVBI11</a>
+                        <a href="#">PVBI11</a>
+                        <a href="">EVBI11</a>
+                        <a href="">PATC11</a>
+                        <a href="">PATL11</a>
+                        <a href="">BLMO11</a>
+                        <a href="">BLCA11</a>
+                        <a href="">TRNT11</a>
+                      </div>
 
-                      <div class="papel">b</div>
+                      <div class="papel">
+                        <h6>Papel</h6>
+                        <a href="">CVBI11</a>
+                        <a href="">AVBI11</a>
+                        <a href="">RVBI11</a>
+                        <a href="">BLMC11</a>
+                        <a href="">BLMR11</a>
+                      </div>
                     </div>
                   </ul>
                 </li>
@@ -478,26 +498,28 @@
               </ul>
             </nav>
 
-            <div class="header-right-side">
-              <button
-                type="button"
-                class="open-searchbox"
-                data-bs-toggle="tooltip"
-                data-bs-trigger="hover"
-                data-bs-placement="bottom"
-                accesskey="2"
-                title="Pesquisar"
-              >
-                <i class="icon-busca"></i>
-              </button>
+            <div class="">
+              <div class="header-right-side">
+                <button
+                  type="button"
+                  class="open-searchbox"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  accesskey="2"
+                  title="Pesquisar"
+                >
+                  <i class="icon-busca"></i>
+                </button>
 
-              <button
-                type="button"
-                class="toggle-mobile-menu"
-                aria-label="Abrir Menu"
-              >
-                <span class="icon-nav" title="Abrir Menu"></span>
-              </button>
+                <button
+                  type="button"
+                  class="toggle-mobile-menu"
+                  aria-label="Abrir Menu"
+                >
+                  <span class="icon-nav" title="Abrir Menu"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -567,8 +589,8 @@
     <div class="video-somos-vbi">
       <div class="new-parallax">
         <section>
-          <video height="776" autoplay>
-            <source src="video/video.mp4" type="video/mp4" />
+          <video height="776" autoplay muted controls>
+            <source src="video/video.mp4" autoplay type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </section>
@@ -610,8 +632,8 @@
     </div>
 
     <div class="image-somos">
-      <div class="container container-responsivo-full">
-        <img src="images/image-somos.png" alt="" />
+      <div class="container container-responsivo-full full-screen-main-div">
+        <img data-img-zoom src="images/image-somos.png" alt="" />
       </div>
     </div>
 
@@ -667,9 +689,9 @@
           <div class="container-cards">
             <div class="cards-others">
               <div class="texts-cards">
-                <h5>SBC</h5>
+                <h5>FL 4.440</h5>
 
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#exampleModal">
                   <img src="images/icons/icon-plus.png" alt="" />
                   <p>Ver mais informações</p>
                 </a>
@@ -684,7 +706,7 @@
               <div class="texts-cards">
                 <h5>SBC</h5>
 
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#exampleModal2">
                   <img src="images/icons/icon-plus.png" alt="" />
                   <p>Ver mais informações</p>
                 </a>
@@ -697,9 +719,9 @@
 
             <div class="cards-others">
               <div class="texts-cards">
-                <h5>SBC</h5>
+                <h5>Uliving Jardins</h5>
 
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#exampleModal3">
                   <img src="images/icons/icon-plus.png" alt="" />
                   <p>Ver mais informações</p>
                 </a>
@@ -712,9 +734,9 @@
 
             <div class="cards-others">
               <div class="texts-cards">
-                <h5>SBC</h5>
+                <h5>Extrema</h5>
 
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#exampleModal4">
                   <img src="images/icons/icon-plus.png" alt="" />
                   <p>Ver mais informações</p>
                 </a>
@@ -728,6 +750,306 @@
         </div>
       </div>
     </div>
+
+    <!-- MODAIS CLIENTES -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-modal">
+              <img src="images/aratu-modal.png" alt="" />
+            </div>
+
+            <div class="texts-modal">
+              <h1>Nome do empreendimento</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue at tellus ac iaculis. Phasellus nec euismod ante. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. In nec nunc
+                odio. Ut ac elit eget libero molestie feugiat eget eget metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <div class="box-icons">
+                <div class="itens-box">
+                  <img src="images/pin.png" alt="" />
+                  <a href="#" target="_blank">Localização</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/ArrowsOut.png" alt="" />
+                  <a href="#" target="_blank">Área m²</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/Buildings.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/CalendarBlank.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-modal">
+              <img src="images/aratu-modal.png" alt="" />
+            </div>
+
+            <div class="texts-modal">
+              <h1>Nome do empreendimento</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue at tellus ac iaculis. Phasellus nec euismod ante. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. In nec nunc
+                odio. Ut ac elit eget libero molestie feugiat eget eget metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <div class="box-icons">
+                <div class="itens-box">
+                  <img src="images/pin.png" alt="" />
+                  <a href="#" target="_blank">Localização</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/ArrowsOut.png" alt="" />
+                  <a href="#" target="_blank">Área m²</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/Buildings.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/CalendarBlank.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-modal">
+              <img src="images/aratu-modal.png" alt="" />
+            </div>
+
+            <div class="texts-modal">
+              <h1>Nome do empreendimento</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue at tellus ac iaculis. Phasellus nec euismod ante. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. In nec nunc
+                odio. Ut ac elit eget libero molestie feugiat eget eget metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <div class="box-icons">
+                <div class="itens-box">
+                  <img src="images/pin.png" alt="" />
+                  <a href="#" target="_blank">Localização</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/ArrowsOut.png" alt="" />
+                  <a href="#" target="_blank">Área m²</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/Buildings.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/CalendarBlank.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-modal">
+              <img src="images/aratu-modal.png" alt="" />
+            </div>
+
+            <div class="texts-modal">
+              <h1>Nome do empreendimento</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                congue at tellus ac iaculis. Phasellus nec euismod ante. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. In nec nunc
+                odio. Ut ac elit eget libero molestie feugiat eget eget metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <div class="box-icons">
+                <div class="itens-box">
+                  <img src="images/pin.png" alt="" />
+                  <a href="#" target="_blank">Localização</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/ArrowsOut.png" alt="" />
+                  <a href="#" target="_blank">Área m²</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/Buildings.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+
+                <div class="itens-box">
+                  <img src="images/CalendarBlank.png" alt="" />
+                  <a href="#" target="_blank">Projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM MODAIS CLIENTES -->
+
+    <!-- MODAIS EQUIPE -->
+
+    <div
+      class="modal fade"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-modal">
+              <img src="images/modal-person.png" alt="" />
+            </div>
+
+            <div class="texts-modal">
+              <div class="title-modal-person">
+                <h1>Alexandre Bolsoni</h1>
+                <span>Senior partner e head de logístico</span>
+              </div>
+
+              <p>
+                Alexandre tem 20 anos de experiência profissional e integra a
+                VBI Real Estate desde 2010. Atualmente é responsável pela gestão
+                do segmento de galpões logísticos. Antes de se juntar a VBI Real
+                Estate, Alexandre integrou a Cyrela, onde atuou no segmento de
+                galpões logísticos, edifícios corporativos e projetos
+                residenciais populares. Anteriormente, Alexandre foi responsável
+                pela gestão estratégica, desenvolvimento, expansões e aprovações
+                de projetos para novas lojas no Walmart para as regiões do
+                Nordeste e Sul no Brasil. Integrou também o departamento de
+                locação comercial na CB Richard Ellis em São Paulo. Alexandre é
+                graduado em engenharia pelo Instituto Mauá de Tecnologia e
+                M.B.A. no Insper – Instituto de Ensino e Pesquisa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIM MODAIS EQUIPE -->
 
     <div class="fiis">
       <div class="container container-internas">
@@ -830,8 +1152,8 @@
       </div>
 
       <div class="container container-responsivo-full">
-        <div class="img-invest">
-          <img src="images/mapa-base-investidores.png" alt="" />
+        <div class="img-invest full-screen-main-div">
+          <img data-img-zoom src="images/mapa-base-investidores.png" alt="" />
         </div>
       </div>
     </div>
@@ -849,68 +1171,78 @@
           <div class="swiper swiper-time">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="content-slide">
-                  <div class="img-time">
-                    <img src="images/Time/Rodrigo Abbud_min.png" alt="" />
-                  </div>
+                <a href="#" data-toggle="modal" data-target="#exampleModal5">
+                  <div class="content-slide">
+                    <div class="img-time">
+                      <img src="images/Time/Rodrigo Abbud_min.png" alt="" />
+                    </div>
 
-                  <div class="text-time">
-                    <h3>Rodrigo Abbud</h3>
-                    <h6>Sócio fundador e Head do segmento Office</h6>
+                    <div class="text-time">
+                      <h3>Rodrigo Abbud</h3>
+                      <h6>Sócio fundador e Head do segmento Office</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="swiper-slide">
-                <div class="content-slide">
-                  <div class="img-time">
-                    <img src="images/Time/Ken Wainer_min.png" alt="" />
-                  </div>
+                <a href="#">
+                  <div class="content-slide">
+                    <div class="img-time">
+                      <img src="images/Time/Ken Wainer_min.png" alt="" />
+                    </div>
 
-                  <div class="text-time">
-                    <h3>Ken Wainer</h3>
-                    <h6>Sócio fundador e Head de private equity</h6>
+                    <div class="text-time">
+                      <h3>Ken Wainer</h3>
+                      <h6>Sócio fundador e Head de private equity</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="swiper-slide">
-                <div class="content-slide">
-                  <div class="img-time">
-                    <img src="images/Time/Vitor Martins_min.png" alt="" />
-                  </div>
+                <a href="#">
+                  <div class="content-slide">
+                    <div class="img-time">
+                      <img src="images/Time/Vitor Martins_min.png" alt="" />
+                    </div>
 
-                  <div class="text-time">
-                    <h3>Vitor Martins</h3>
-                    <h6>Senior partner e Head do segmento de Crédito</h6>
+                    <div class="text-time">
+                      <h3>Vitor Martins</h3>
+                      <h6>Senior partner e Head do segmento de Crédito</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="swiper-slide">
-                <div class="content-slide">
-                  <div class="img-time">
-                    <img src="images/Time/Alexandre Bolsoni_min.png" alt="" />
-                  </div>
+                <a href="#">
+                  <div class="content-slide">
+                    <div class="img-time">
+                      <img src="images/Time/Alexandre Bolsoni_min.png" alt="" />
+                    </div>
 
-                  <div class="text-time">
-                    <h3>Rodrigo Abbud</h3>
-                    <h6>Sócio fundador e Head do segmento Office</h6>
+                    <div class="text-time">
+                      <h3>Rodrigo Abbud</h3>
+                      <h6>Sócio fundador e Head do segmento Office</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               <div class="swiper-slide">
-                <div class="content-slide">
-                  <div class="img-time">
-                    <img src="images/Time/Alexandre Bolsoni_min.png" alt="" />
-                  </div>
+                <a href="#">
+                  <div class="content-slide">
+                    <div class="img-time">
+                      <img src="images/Time/Alexandre Bolsoni_min.png" alt="" />
+                    </div>
 
-                  <div class="text-time">
-                    <h3>Rodrigo Abbud</h3>
-                    <h6>Sócio fundador e Head do segmento Office</h6>
+                    <div class="text-time">
+                      <h3>Rodrigo Abbud</h3>
+                      <h6>Sócio fundador e Head do segmento Office</h6>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -926,8 +1258,8 @@
           <h6>DA CASA</h6>
         </div>
 
-        <div class="img-estrutura">
-          <img src="images/image-estrutura-vbi.png" alt="" />
+        <div class="img-estrutura full-screen-main-div">
+          <img data-img-zoom src="images/image-estrutura-vbi.png" alt="" />
         </div>
       </div>
 

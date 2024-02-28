@@ -253,4 +253,43 @@
   .buttons-group a:hover {
     color: #fff !important;
   }
+
+  .header .content .header-right-side .open-searchbox .icon-busca {
+    background-color: #1d1d1d;
+  }
+
+  .texts-banners .primary-button {
+    background-color: #1d1d1d;
+    color: white;
+
+    &:hover {
+      color: white !important;
+    }
+  }
+
+  .cards-home .cards h1 {
+    color: white;
+  }
+
+  .cards-home .cards {
+    background-color: #1d1d1d;
+  }
+
+  .cards-home .cards h6 {
+    color: white;
+  }
+
+  .mySwiper-banner .wrapper-banner-home .swiper-slide::before {
+    transition: 0.3s;
+    background: #000;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 229%
+    ) !important;
+  }
+
+  .mySwiper-banner .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #000;
+  }
 }

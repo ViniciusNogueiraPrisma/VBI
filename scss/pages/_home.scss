@@ -639,6 +639,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    gap: 8px;
     width: 100%;
     border: 1px solid rgb(216, 216, 216);
 
@@ -687,6 +688,7 @@
   video {
     width: 711px;
     height: 388px;
+    border-radius: 4px;
 
     @media (max-width: 1273px) {
       width: 100%;
@@ -734,6 +736,12 @@
 
   a {
     width: fit-content;
+    color: var(--Button-Primary-color-btn-primary-text-default, #fff);
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
 
     &:hover {
       color: white !important;
@@ -779,8 +787,7 @@
       padding: 0;
       margin-left: 40px;
       color: var(--Grayscale-grayscale-color-900, #fff);
-      -webkit-text-stroke-width: 3px;
-      // letter-spacing: 2px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: var(--Grayscale-grayscale-color-900, #fff);
       font-family: "Inter";
       font-size: 48px;
@@ -788,6 +795,7 @@
       font-weight: 700;
       line-height: 110%;
       text-transform: uppercase;
+      letter-spacing: 2px;
 
       @media (max-width: 767px) {
         font-size: 38px;
@@ -828,7 +836,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: rgba(221, 221, 221, 0.6);
+      background: rgb(223 221 221 / 50%);
       backdrop-filter: blur(0px);
       -webkit-backdrop-filter: blur(0px);
       border-radius: 10px;
@@ -865,6 +873,7 @@
         font-family: Verdana;
         font-weight: 700;
         line-height: 31.68px;
+        text-transform: uppercase;
         word-wrap: break-word;
 
         @media (max-width: 767px) {
@@ -908,7 +917,7 @@
       text-transform: uppercase;
       -webkit-text-fill-color: rgba(0, 0, 0, 0);
       -webkit-text-stroke-color: #fff;
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 2px;
 
       @media (max-width: 767px) {
         font-size: 34px;
@@ -920,15 +929,14 @@
       padding: 0;
       margin-left: 40px;
       color: var(--Grayscale-grayscale-color-900, #fff);
-      -webkit-text-stroke-width: 3px;
+      // -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: var(--Grayscale-grayscale-color-900, #fff);
-      font-family: var(--font-verdana);
+      font-family: var(--font-verdana-bold);
       font-size: 48px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 110%;
       text-transform: uppercase;
-      letter-spacing: 5px;
 
       @media (max-width: 767px) {
         font-size: 32px;
@@ -1053,7 +1061,7 @@
       padding: 0;
       margin-left: 40px;
       color: var(--Grayscale-grayscale-color-900, #474747);
-      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 3px;
       -webkit-text-stroke-color: var(--Grayscale-grayscale-color-900, #474747);
       font-family: var(--font-verdana-bold);
       font-size: 48px;
@@ -1081,6 +1089,13 @@
   }
 
   a {
+    color: var(--Button-Primary-color-btn-primary-text-default, #fff);
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+
     &:hover {
       color: #fff !important;
       font-weight: 200;

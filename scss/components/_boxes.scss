@@ -1,6 +1,6 @@
 .acessibillity-bar {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   background: #1d1d1d;
   transition: 0.3s;
@@ -71,9 +71,16 @@
         }
 
         & > a {
-          margin-right: 8px;
+          position: relative;
+          top: 1px;
+          margin-right: 12px;
           display: block;
-          line-height: 0;
+          color: var(--Grayscale-grayscale-color-700, #eee);
+          font-family: Verdana;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 132% !important;
 
           text-decoration: none;
           color: var(--text-grey-scale-03);
@@ -83,8 +90,8 @@
           small {
             color: #eeee;
             font-size: rem(12);
-            font-weight: 400;
-            font-family: var(--font-verdana);
+            font-weight: 200;
+            font-family: "Inter";
             line-height: 132%;
           }
 
@@ -308,10 +315,16 @@
 
 .modal {
   .modal-content {
-    padding: 24px;
+    background-color: #1d1d1d;
+    padding: 56px;
+
+    @media(max-width: 800px) {
+      padding: 46px;
+    }
   }
+
   .modal-dialog {
-    max-width: 380px;
+    max-width: 1152px;
     width: 100%;
     margin: 0 auto;
     padding: 0 8px;
@@ -433,7 +446,7 @@
 
 .idiomas {
   padding-right: 24px;
-  border-right: 1px solid gray;
+  border-right: 1px solid #323232;
 
   display: flex;
   align-items: center;
@@ -444,7 +457,7 @@
     font-family: "Inter", sans-serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 124%;
     text-decoration: none;
   }
@@ -464,7 +477,7 @@
     color: var(--Menu-Canal-color-menu-canal-default, #fff);
     text-decoration: none;
     /* Body/sm-regular */
-    font-family: Verdana;
+    font-family: "inter";
     font-size: 12px;
     font-style: normal;
     font-weight: 200;
@@ -472,4 +485,134 @@
   }
 
   display: flex;
+}
+
+.modal-header {
+  border: 0px;
+  padding: 0;
+
+  .close {
+    position: absolute;
+    /* left: 0; */
+    top: 24px;
+    border: 0px;
+    border-radius: 4px;
+    right: 24px;
+    width: fit-content;
+
+    @media (max-width: 1008px) {
+      top: 14px;
+      right: 14px;
+    }
+
+    span {
+      color: #00a99d;
+      font-size: 26px;
+      line-height: 0;
+      top: 4px;
+      position: relative;
+      left: 1px;
+    }
+  }
+}
+
+.modal:focus {
+  outline: none !important;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @media (max-width: 1008px) {
+    flex-direction: column;
+  }
+
+  .img-modal {
+    width: 50%;
+
+    @media (max-width: 1008px) {
+      width: 100%;
+    }
+
+    img {
+      object-fit: cover;
+      border-radius: 4px;
+
+      @media (max-width: 1008px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .texts-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 50%;
+
+    @media (max-width: 1008px) {
+      width: 100%;
+    }
+
+    span {
+      color: var(--themes-font-text-font-color-text-small, #bbb);
+      font-family: Verdana;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    .box-icons {
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #333333;
+
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+
+      .itens-box {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: var(--Typography-Text-color-font-text-caption, #fff);
+          font-family: Verdana;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 24px */
+        }
+      }
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+
+      color: var(--Typography-Text-color-font-text-caption, #fff);
+      font-family: var(--font-verdana-bold);
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 132%;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: var(--Typography-Text-color-font-text-caption, #fff);
+      font-family: Verdana;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+  }
 }
