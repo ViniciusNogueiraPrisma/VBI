@@ -93,7 +93,6 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // Contraste
 
-
 $(".menu-itens a").on("click", function (e) {
   e.preventDefault();
   $(".menu-itens a").removeClass("active");
