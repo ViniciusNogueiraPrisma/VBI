@@ -317,7 +317,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    opacity: 0.3;
+    opacity: 0.5;
 
     .img-arrow {
       width: 100% !important;
@@ -330,7 +330,7 @@
   }
 
   p {
-    color: var(--Font-Text-text-color-medium, #eee);
+    color: var(--Font-Text-text-color-medium, #ffffff);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -431,6 +431,10 @@
     video {
       width: 100%;
       object-fit: cover;
+
+      @media (max-width: 900px) {
+        height: 400px !important;
+      }
     }
   }
 }
@@ -450,6 +454,7 @@
 
     @media (max-width: 991px) {
       font-size: 26px;
+      -webkit-text-stroke-width: 1px;
     }
   }
 
@@ -508,6 +513,7 @@
 
     @media (max-width: 991px) {
       font-size: 26px;
+      -webkit-text-stroke-width: 1px;
     }
   }
 
@@ -1301,6 +1307,10 @@
     gap: 16px;
     flex-wrap: wrap;
 
+    a:focus {
+      border: 1px solid red;
+    }
+
     a {
       background-color: #fff;
       text-decoration: none;
@@ -1376,10 +1386,10 @@
         th {
           padding: 8px 16px !important;
           color: #474747;
-          font-size: 18px;
+          font-size: 16px;
           font-family: var(--font-verdana);
           font-weight: 900;
-          line-height: 28.8px;
+          line-height: 23.8px;
           word-wrap: break-word;
           max-width: 150px;
         }
@@ -1394,10 +1404,10 @@
       tr {
         th {
           color: #474747;
-          font-size: 18px;
+          font-size: 16px;
           font-family: Inter;
           font-weight: 400;
-          line-height: 35px;
+          line-height: 23px;
           word-wrap: break-word;
           padding: 10px 16px;
         }
@@ -2076,7 +2086,7 @@
           th {
             color: var(--Font-Text-text-color-default, #474747);
             font-family: Inter;
-            font-size: 18px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 700;
             line-height: 160%;
@@ -2094,7 +2104,7 @@
 
             /* --Text/Body 3 */
             font-family: Inter;
-            font-size: 18px;
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 27px */
@@ -2282,6 +2292,7 @@
       img {
         width: 100%;
         object-fit: cover;
+        height: 220px;
       }
     }
 
