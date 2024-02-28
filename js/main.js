@@ -93,6 +93,22 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 // Contraste
 
+
+$(".menu-itens a").on("click", function (e) {
+  e.preventDefault();
+  $(".menu-itens a").removeClass("active");
+  $(this).addClass("active");
+
+  var target = $(this).attr("href");
+  var offset = $(target).offset().top - 50;
+  $("html, body").animate(
+    {
+      scrollTop: offset,
+    },
+    300
+  );
+});
+
 function accessApplyTheme(theme) {
   localStorage.setItem("access_theme", theme);
 

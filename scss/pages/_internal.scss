@@ -1307,8 +1307,10 @@
     gap: 16px;
     flex-wrap: wrap;
 
-    a:focus {
-      border: 1px solid red;
+    a.active {
+      color: white;
+      transition: 0.4s;
+      background-color: #008f85;
     }
 
     a {
