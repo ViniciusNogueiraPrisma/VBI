@@ -802,6 +802,21 @@
 
   .box-checkbox .checkboxs-text p {
     color: #fff;
+  }
 
+  .accordions-vbi .accordion-item .card-header h5 button {
+    color: white;
+  }
+
+  .accordions-vbi .accordion-item .card-header h5 button img {
+    filter: invert(1) brightness(12);
+  }
+
+  .accordions-vbi .accordion-item .card-header h5 button[aria-expanded="true"] {
+    background-color: #101010;
+  }
+
+  .filter-content .filter .filter-accordions .card-body ul li.active {
+    background-color: #101010;
   }
 }
