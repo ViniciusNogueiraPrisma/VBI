@@ -3559,12 +3559,16 @@
       border: unset;
 
       .collapsing {
-        transition: height 0.5s ease-in !important;
+        transition: height 0.3s ease-in !important;
       }
     }
 
     .card-body {
       padding: 0px 40px;
+
+      .texts-body {
+        padding: 32px 0px;
+      }
 
       .lists-regulamento {
         margin-top: 0px !important;
