@@ -35,25 +35,11 @@ elements.forEach((el) => {
   IO.observe(el);
 });
 
-// $(document).ready(function () {
-//   $(".accordion-link").click(function (e) {
-//     e.preventDefault();
-//     $(".accordion-link").removeClass("active");
-//     $(this).addClass("active");
-//   });
-// }); OK - FUNCIONANDO
-
-$(document).ready(function(){
-  var currentIndex = -1; // Índice inicial
-  $('.accordion-link').click(function(e){
+$(document).ready(function () {
+  $(".accordion-link").click(function (e) {
     e.preventDefault();
-    var newIndex = $(this).index(); // Obtém o índice do link clicado
-    if (newIndex !== currentIndex) {
-      $('.accordion-link').removeClass('active');
-      $(this).addClass('active');
-      $('.tabs-active').html($('.tab-content').eq(newIndex).html()); // Atualiza o conteúdo correspondente
-      currentIndex = newIndex; // Atualiza o índice atual
-    }
+    $(".accordion-link").removeClass("active");
+    $(this).addClass("active");
   });
 });
 
