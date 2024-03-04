@@ -3603,6 +3603,11 @@
           justify-content: space-between;
           border-bottom: 1px solid #d4d4d4;
 
+          &:hover {
+            transition: 0.4s;
+            padding: 24px 60px;
+          }
+
           img {
             transition: 0.3s;
           }
