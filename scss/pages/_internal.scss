@@ -1232,6 +1232,8 @@
 }
 
 .cards-banner-container {
+  background-color: #ddd;
+
   @media (max-width: 620px) {
     .container {
       padding: 0;
@@ -2018,9 +2020,21 @@
           margin: 0px;
           padding: 0;
 
+          li.active {
+            transition: 0.3s;
+            background-color: #00a99d;
+
+            a {
+              color: white;
+              transition: 0.3s;
+            }
+          }
+
           li {
             margin: 0;
             padding: 8px 24px;
+            transition: 0.3s;
+            cursor: pointer;
 
             a {
               color: var(--Font-Text-text-color-default, #474747);
@@ -3531,4 +3545,86 @@
   width: 307px;
   max-width: 307px !important;
   right: -7px;
+}
+
+.accordions-vbi {
+  margin-top: 24px;
+
+  .accordion-item {
+    background-color: transparent;
+    border: unset;
+    border-radius: unset;
+
+    .card {
+      border: unset;
+
+      .collapsing {
+        transition: height 0.5s ease-in !important;
+      }
+    }
+
+    .card-body {
+      padding: 0px 40px;
+
+      .lists-regulamento {
+        margin-top: 0px !important;
+      }
+    }
+
+    .card-header {
+      margin: 0;
+      padding: 0;
+
+      background-color: transparent;
+      border: unset;
+
+      h5 {
+        margin: 0;
+        padding: 0;
+
+        button {
+          border-radius: 0px;
+          text-align: start;
+          width: 100%;
+          background-color: transparent;
+          padding: 24px 40px;
+          text-decoration: none;
+
+          color: var(--Accordion-color-accordion-collapsed, #474747);
+          font-family: var(--font-verdana);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 135%; /* 27px */
+          transition: 0.4s;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #d4d4d4;
+
+          img {
+            transition: 0.3s;
+          }
+        }
+
+        button[aria-expanded="true"] {
+          transition: 0.4s;
+          background-color: #006660;
+          color: var(--Accordion-color-accordion-expanded-text, #fff);
+
+          img {
+            transition: 0.3s;
+            rotate: 45deg;
+            filter: invert(1) brightness(2.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: unset !important;
 }

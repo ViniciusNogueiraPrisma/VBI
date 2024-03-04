@@ -35,7 +35,13 @@ elements.forEach((el) => {
   IO.observe(el);
 });
 
-// observes the input's :focus and :focusout event inside the search box and styles its parent element.
+// $(document).ready(function () {
+//   $(".accordion-link").click(function (e) {
+//     e.preventDefault();
+//     $(".accordion-link").removeClass("active");
+//     $(this).addClass("active");
+//   });
+// }); OK - FUNCIONANDO
 
 $(".searchbox input").focus(function () {
   $(".searchbox .input-group").addClass("focused-border");
@@ -45,14 +51,10 @@ $(".searchbox input").focusout(function () {
   $(".searchbox .input-group").removeClass("focused-border");
 });
 
-// opens and closes the search box.
-
 $(".open-searchbox, .close-searchbox").click(function () {
   $(".searchbox").toggleClass("active");
   $("body").toggleClass("open-menu");
 });
-
-// manages the status of the mobile menu.
 
 $(".toggle-mobile-menu").click(function () {
   $(".mobile-menu-div").toggleClass("active");

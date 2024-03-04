@@ -552,7 +552,7 @@
     </div>
 
     <div class="main-content-filter">
-      <div class="container container-internas">
+      <div class="container">
         <div class="filter-content">
           <div class="filter" data-aos="fade-up" data-aos-delay="400">
             <div class="title-filter">
@@ -568,7 +568,7 @@
                         class=""
                         data-toggle="collapse"
                         data-target="#collapseOne"
-                        aria-expanded="false"
+                        aria-expanded="true"
                         aria-controls="collapseOne"
                       >
                         Varejo
@@ -583,16 +583,18 @@
 
                   <div
                     id="collapseOne"
-                    class="collapse"
+                    class="collapse show"
                     aria-labelledby="headingOne"
                     data-parent="#accordion"
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">LVBI11</a></li>
-                        <li><a href="">PATL11</a></li>
-                        <li><a href="">PVBI11</a></li>
-                        <li><a href="">PATC11</a></li>
+                        <li class="accordion-link active">
+                          <a href="">LVBI11</a>
+                        </li>
+                        <li class="accordion-link"><a href="">PATL11</a></li>
+                        <li class="accordion-link"><a href="">PVBI11</a></li>
+                        <li class="accordion-link"><a href="">PATC11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -625,9 +627,9 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">EVBI11</a></li>
-                        <li><a href="">RVBI11</a></li>
-                        <li><a href="">CVBI11</a></li>
+                        <li class="accordion-link"><a href="">EVBI11</a></li>
+                        <li class="accordion-link"><a href="">RVBI11</a></li>
+                        <li class="accordion-link"><a href="">CVBI11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -660,8 +662,8 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">AVBI11</a></li>
-                        <li><a href="">BLCA11</a></li>
+                        <li class="accordion-link"><a href="">AVBI11</a></li>
+                        <li class="accordion-link"><a href="">BLCA11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -694,7 +696,7 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">BLMC11</a></li>
+                        <li class="accordion-link"><a href="">BLMC11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -727,7 +729,7 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">BLMO11</a></li>
+                        <li class="accordion-link"><a href="">BLMO11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -760,7 +762,7 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">BLMR11</a></li>
+                        <li class="accordion-link"><a href="">BLMR11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -793,7 +795,7 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">TRNT11</a></li>
+                        <li class="accordion-link"><a href="">TRNT11</a></li>
                       </ul>
                     </div>
                   </div>
@@ -826,7 +828,9 @@
                   >
                     <div class="card-body">
                       <ul>
-                        <li><a href="">Documentos Regulátorios</a></li>
+                        <li class="accordion-link">
+                          <a href="">Documentos Regulátorios</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -869,29 +873,8 @@
               </div>
             </div>
 
-            <div class="content table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Data de publicação</th>
-                    <th scope="col">Download</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Informativo de rentabilidade</td>
-                    <td>Informes Periódicos</td>
-                    <td>16/12/2022</td>
-                    <td>
-                      <a href=""
-                        ><img src="images/icons/icon-pdf.png" alt=""
-                      /></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="content table-responsive tabs-active">
+              
             </div>
           </div>
         </div>
