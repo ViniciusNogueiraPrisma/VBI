@@ -43,6 +43,22 @@ elements.forEach((el) => {
 //   });
 // }); OK - FUNCIONANDO
 
+$(document).ready(function(){
+  var currentIndex = -1; // Índice inicial
+  $('.accordion-link').click(function(e){
+    e.preventDefault();
+    var newIndex = $(this).index(); // Obtém o índice do link clicado
+    if (newIndex !== currentIndex) {
+      $('.accordion-link').removeClass('active');
+      $(this).addClass('active');
+      $('.tabs-active').html($('.tab-content').eq(newIndex).html()); // Atualiza o conteúdo correspondente
+      currentIndex = newIndex; // Atualiza o índice atual
+    }
+  });
+});
+
+// observes the input's :focus and :focusout event inside the search box and styles its parent element.
+
 $(".searchbox input").focus(function () {
   $(".searchbox .input-group").addClass("focused-border");
 });
@@ -51,10 +67,14 @@ $(".searchbox input").focusout(function () {
   $(".searchbox .input-group").removeClass("focused-border");
 });
 
+// opens and closes the search box.
+
 $(".open-searchbox, .close-searchbox").click(function () {
   $(".searchbox").toggleClass("active");
   $("body").toggleClass("open-menu");
 });
+
+// manages the status of the mobile menu.
 
 $(".toggle-mobile-menu").click(function () {
   $(".mobile-menu-div").toggleClass("active");
